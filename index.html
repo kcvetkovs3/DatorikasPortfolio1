@@ -6,13 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="style/mansStils">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+<link rel="stylesheet" href="CSS/mansStils.css">
 </head>
 <body>
 
@@ -20,26 +14,27 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Jomas un izmantotās lietojumprogrammas</b></h3>
+    <h3 class="w3-padding-64"><b>MENU:</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Attēlu apstrāde</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ievads</a> 
+
+    <!-- Attēlu apstrāde -->
+    <div class="w3-bar-item w3-button w3-hover-white submenu-container">
+      Attēlu apstrāde ▼
+      <div class="submenu">
+        <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika (GIMP)</a>
+        <a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika (Inkscape)</a>
+      </div>
+    </div>
+
     <a href="#modelesana" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3D modelēšana (Tinkercad)</a> 
     <a href="#montaza" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Montāža (CapCut)</a> 
     <a href="#tekstapstrade" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tekstapstrāde (Word)</a> 
     <a href="#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Izklājlapas (Excel)</a> 
-    <a href="#indtema" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Individuālā tēma</a>
+    <a href="otrais.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Individuālā tēma</a>
   </div>
 </nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Jomas un izmantotās lietojumprogrammas</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
@@ -49,14 +44,39 @@ body {font-size:16px;}
     <h1 class="w3-jumbo"><b>Mans Datorikas Portfolio</b></h1>
   </div>
   
+    <!-- ievads -->
+  <div class="w3-container" id="#" style="margin-top:70px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Ievads</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Mani sauc Kirils Cvetkovs, es mācos 10.e klasē, un šis ir mans datorikas portfolio. 2024./2025. mācību gads ar skolotāju Aiju Lūsi datorikā bija ļoti interesants un produktīvs.</p>
+    <p>Pārlapojot MENU kreisajā pusē, var apskatīt, ko es iemācījos dažādās informātikas jomās, kā arī to, ko gada laikā darīju savā individuālajā tēmā.
+    </p>
+  </div>
+  
+    <!-- rastra -->
+  <div class="w3-container" id="rastra" style="margin-top:70px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Rastra grafika (GIMP)</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Es rediģēju dažādas lietas attēlos, lai tos uzlabotu, kā arī veidoju GIF animācijas, izmantojot rastra grafiku.</p>
+    <p>Es iemācījos izmantot GIMP programmu.
+    </p>
+  </div>
+    
+      <!-- vektorgrafika -->
+  <div class="w3-container" id="vektorgrafika" style="margin-top:70px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Vektorgrafika (Inkscape)</b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round">
+    <p>Es veidoju logotipu, izmantojot vektorgrafiku.</p>
+    <p>Es iemācījos izmantot Inkscape programmu.
+    </p>
+  </div>
+ 
   <!-- modelesana -->
   <div class="w3-container" id="modelesana" style="margin-top:70px">
     <h1 class="w3-xxxlarge w3-text-black"><b>3D modelēšana (Tinkercad)</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>Es kopā ar savu komandu veidoju kuba 3D modeli, lai pēc tam to izdrukātu ar 3D printeri.</p>
+    <p>Es iemācījos izmantot Tinkercad programmu, lai izveidotu 3D modeļus, un arī redzēju, kā strādāt ar 3D printeri.
     </p>
   </div>
   
@@ -64,10 +84,8 @@ body {font-size:16px;}
   <div class="w3-container" id="montaza" style="margin-top:70px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Montāža (CapCut)</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>No mūsu pieredzes, izveidojot kuba 3D modeli, es izveidoju un montēju videoklipu.</p>
+    <p>Es iemācījos izmantot CapCut montāžas programmu.
     </p>
   </div>
     
@@ -75,32 +93,12 @@ body {font-size:16px;}
   <div class="w3-container" id="tekstapstrade" style="margin-top:70px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Tekstapstrāde (Word)</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p>Es iemācījos lietot Word un uzzināju arī daudzas tā labās funkcijas.</p>
   </div>
       
         <!-- izklajlapas -->
   <div class="w3-container" id="izklajlapas" style="margin-top:70px">
     <h1 class="w3-xxxlarge w3-text-black"><b>Izklājlapas (Excel)</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p>Es iemācījos lietot Excel un uzzināju arī daudzas tā labās funkcijas.</p>
   </div>
-        
-          <!-- indtema -->
-  <div class="w3-container" id="indtema" style="margin-top:70px">
-    <h1 class="w3-xxxlarge w3-text-black"><b>Individuālā tēma</b></h1>
-    <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
- 
