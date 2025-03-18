@@ -20,12 +20,12 @@
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ievads</a> 
 
     <!-- Attēlu apstrāde -->
-    <div class="w3-bar-item w3-button w3-hover-white submenu-container">
+    <div class="w3-bar-item w3-button w3-hover-white" onclick="toggleSubmenu()">
       Attēlu apstrāde ▼
-      <div class="submenu">
-        <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika (GIMP)</a>
-        <a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika (Inkscape)</a>
-      </div>
+    </div>
+    <div id="submenu" class="w3-hide">
+      <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika (GIMP)</a>
+      <a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika (Inkscape)</a>
     </div>
 
     <a href="#modelesana" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3D modelēšana (Tinkercad)</a> 
@@ -35,6 +35,17 @@
     <a href="otrais.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Individuālā tēma</a>
   </div>
 </nav>
+
+<script>
+  function toggleSubmenu() {
+    var submenu = document.getElementById("submenu");
+    if (submenu.classList.contains("w3-hide")) {
+      submenu.classList.remove("w3-hide");
+    } else {
+      submenu.classList.add("w3-hide");
+    }
+  }
+</script>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
