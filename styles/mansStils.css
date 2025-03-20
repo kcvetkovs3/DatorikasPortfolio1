@@ -1,0 +1,76 @@
+/* General styles for the page */
+body {
+    background-image: url('../images/fons.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Set text color to black */
+    font-family: Arial, sans-serif;
+}
+
+/* Remove extra padding in the main container */
+.w3-main {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px; /* Add slight padding at the top */
+}
+
+/* Containers for sections */
+.w3-container {
+    padding: 0; /* Remove excessive padding */
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #000; /* Set text color to black */
+}
+
+/* For centering images */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Padding for paragraphs */
+p {
+    margin-bottom: 10px;
+    color: #000; /* Set text color to black */
+}
+
+/* Styles for links */
+a {
+    color: #1a73e8; /* Set link text color to blue */
+    text-decoration: underline; /* Add underline to links */
+}
+
+a:hover {
+    text-decoration: underline; /* Ensure underline remains when hovering */
+}
+
+/* Additional styles for navigation */
+.w3-sidebar {
+    z-index: 3;
+    width: 300px;
+    font-weight: bold;
+}
+
+/* Styles for buttons */
+.w3-bar-item.w3-button {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.w3-bar-item.w3-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Remove unnecessary padding for image blocks */
+img {
+    margin-bottom: 20px;
+}
