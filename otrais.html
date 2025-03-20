@@ -13,10 +13,24 @@
 <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b></b></h3>
+    <h3 class="w3-padding-64"><b>:</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Atpakaļ uz galveno</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ievads</a>
+<!-- Attēlu apstrāde -->
+    <div class="w3-bar-item w3-button w3-hover-white" onclick="toggleSubmenu()">
+      Attēlu apstrāde ▼
+    </div>
+    <div id="submenu" class="w3-hide">
+      <a href="#rastra" class="w3-bar-item w3-button">Rastra grafika (GIMP)</a>
+      <a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika (Inkscape)</a>
+    </div>
+
+    <a href="index.html#modelesana" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3D modelēšana (Tinkercad)</a>
+    <a href="index.html#montaza" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Montāža (CapCut)</a>
+    <a href="index.html#tekstapstrade" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tekstapstrāde (Word)</a>
+    <a href="index.html#izklajlapas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Izklājlapas (Excel)</a>
+    <a href="#avoti" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Individuālā tēma</a>
   </div>
 </nav>
 
@@ -29,9 +43,10 @@
          ka konkrēta persona var strādāt efektīvi, ērti un pēc iespējas drošāk savai veselībai. </p>
         <p>Es izveidoju reklāmas plakātu par šo tēmu Inkscape programmā.<p>
     </div>
-    <img src="images/indtema.jpg" class="w3-center" width="550" height="390">
+    <img src="images/indtema.jpg" class="w3-center" width="700" height="600">
         <h1 class="w3-jumbo"><b>Avoti</b></h1>
         <hr style="width:50px;border:5px solid black" class="w3-round">
+       <div class="w3-main" id="avoti" style="margin-left:340px;margin-right:40px">
     </p> <a href="https://www.indiamart.com/proddetail/ergonomics-assessment-training-services-20829742862.html" target="_blank">Attēls ar cilvēku pie galda</a> <p>
     </p> <a href="https://publichealth.tulane.edu/blog/workplace-ergonomics-safety/" target="_blank">Informācija par ergonomisko darba vietu</a> <p>
 </div>
