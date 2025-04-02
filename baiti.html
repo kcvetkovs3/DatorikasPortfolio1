@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 450px;
+        }
+        input[type="text"] {
+            width: 125px;
+        }
+    </style>
+    <script>
+        function calculateDownload() {
+            let time = document.getElementById("time").value;
+            let unit = document.querySelector('input[name="unit"]:checked');
+            let resultField = document.getElementById("result");
+           
+            if (!time || isNaN(time) || time <= 0) {
+                resultField.value = "";
+                return;
+            }
+           
+            let speedMbps = 25;
+            let bytesPerSecond = (speedMbps * 1000000) / 8;
+            let totalBytes = bytesPerSecond * time;
+           
+            if (unit) {
+                if (unit.value === "KiB") {
+                    resultField.value = (totalBytes / 1024).toFixed(4);
+                } else if (unit.value === "KB") {
+                    resultField.value = Math.round(totalBytes / 1000);
+                }
+            }
+        }
+       
+        function resetForm() {
+            document.getElementById("time").value = "";
+            document.getElementById("result").value = "";
+            let units = document.querySelectorAll('input[name="unit"]');
+            units.forEach(unit => unit.checked = false);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <label>Aprēķināt cik daudz informācijas var lejuplādēt</label>
+        <br>
+        <input type="text" id="time" name="time" onfocus="resetForm()"> sekundēs, ja interneta ātrums ir 25 Mbps.
+        <br><br>
+        <label>Atbilde</label>
+        <br>
+        <input type="text" id="result" name="result" readonly>
+        <input type="radio" id="kib" name="unit" value="KiB" onclick="calculateDownload()">
+        <label for="kib">KiB</label>
+        <input type="radio" id="kb" name="unit" value="KB" onclick="calculateDownload()">
+        <label for="kb">KB</label>
+    </div>
+</body>
+</html>
